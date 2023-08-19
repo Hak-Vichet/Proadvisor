@@ -3,9 +3,6 @@ import Faq from "@/app/components/Faq";
 import React from "react";
 import CompareLoansForm from "./CompareLoansForm";
 import TableContentLoans from "./TableContentLoans";
-import SavingLineChart from "./SavingLineChart";
-import ExchangeRateChart from "./ExchangeRateChart";
-
 const Page = () => {
   return (
     <div className="pt-16 sm:pt-16 md:pt-20">
@@ -52,9 +49,6 @@ const Page = () => {
             or financing options.
           </p>
         </div>
-        <SavingLineChart />
-        {/* <ExchangeRateChart /> */}
-        {/* <PromotionOffer /> */}
         <TableContentLoans />
       </div>
 

@@ -5,7 +5,6 @@ import ChooseFixedDepoList from "./ChooseFixedDepoList";
 import SocialLink from "@/app/components/SocialLink";
 import data from "./data.json";
 import Bank from "./Bank";
-import KnowFixDepoAcc from "./KnowFixDepoAcc";
 import ResourceListfixedDepo from "./ResourceListfixedDepo";
 import NumListFixedDepo from "./NumListFixedDepo";
 import SecondNumlist from "./SecondNumList";

@@ -121,19 +121,6 @@ const CompareSaveAccForm = () => {
             />
           </div>
 
-          {/* <div className="flex flex-col gap-3 w-full">
-            <div className="flex flex-row justify-between">
-              <label for="value" className="labelStyle">
-                Select Filter
-              </label>
-            </div>
-            <Select
-              defaultValue={selectedTerm}
-              onChange={setSelectedTerm}
-              options={terms}
-            />
-          </div> */}
-
           <div className="flex flex-col gap-3 w-full">
             <div className="flex flex-row justify-between">
               <label for="value" className="labelStyle truncate">

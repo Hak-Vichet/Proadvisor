@@ -12,8 +12,6 @@ import {
   getAllfixeddepositlist,
 } from "../../api/fixeddeposits/getAlldeposits";
 
-import Chartfixdeposits from "./Chartfixdeposits";
-
 const term = [
   { id: 1, name: "1" },
   { id: 2, name: "4" },
@@ -276,46 +274,6 @@ const CompareFixedDepoForm = () => {
               </div>
             </Combobox>
           </div>
-          {/* <div className="flex flex-col gap-3">
-            <div className="flex flex-row justify-between">
-              <label for="value" className="labelStyle">
-                Select RateAt
-              </label>
-              <svg
-                width="20"
-                height="21"
-                viewBox="0 0 20 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1288_92357)">
-                  <path
-                    d="M9.99996 6.67078V10.0041M9.99996 13.3374H10.0083M18.3333 10.0041C18.3333 14.6065 14.6023 18.3374 9.99996 18.3374C5.39759 18.3374 1.66663 14.6065 1.66663 10.0041C1.66663 5.40174 5.39759 1.67078 9.99996 1.67078C14.6023 1.67078 18.3333 5.40174 18.3333 10.0041Z"
-                    stroke="#667085"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1288_92357">
-                    <rect
-                      width="20"
-                      height="20"
-                      fill="white"
-                      transform="translate(0 0.00415039)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-
-            <select className="selectStyle" onChange={handleRateatChange}>
-              <option value="Maturity">Maturity</option>
-              <option value="Monthly">Monthly</option>
-              <option value="Quarterly">Quarterly</option>
-            </select>
-          </div> */}
           <div className="flex flex-col gap-3">
             <div className="flex flex-row justify-between ">
               <label for="value" className="labelStyle">
@@ -418,45 +376,6 @@ const CompareFixedDepoForm = () => {
               </div>
             </Combobox>
           </div>
-          {/* <div className="flex flex-col gap-3">
-            <div className="flex flex-row justify-between">
-              <label for="value" className="labelStyle">
-                Select currency
-              </label>
-              <svg
-                width="20"
-                height="21"
-                viewBox="0 0 20 21"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1288_92362)">
-                  <path
-                    d="M10.0001 6.67078V10.0041M10.0001 13.3374H10.0084M18.3334 10.0041C18.3334 14.6065 14.6025 18.3374 10.0001 18.3374C5.39771 18.3374 1.66675 14.6065 1.66675 10.0041C1.66675 5.40174 5.39771 1.67078 10.0001 1.67078C14.6025 1.67078 18.3334 5.40174 18.3334 10.0041Z"
-                    stroke="#667085"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1288_92362">
-                    <rect
-                      width="20"
-                      height="20"
-                      fill="white"
-                      transform="translate(0 0.00415039)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-
-            <select className="selectStyle" onChange={handleCurrencyChange}>
-              <option value="KHR">KHR</option>
-              <option value="USD">USD</option>
-            </select>
-          </div> */}
         </div>
         <div className="flex justify-end mt-5 ">
           <button
@@ -548,22 +467,6 @@ const CompareFixedDepoForm = () => {
             </div>
           </div>
         </div>
-        {/* chart header */}
-        <div className=" flex flex-col justify-center items-center my-12">
-          <p className="text-gray-900 font-semibold text-3xl sm:text-3xl md:text-4xl text-center pt-4">
-            Fixed Deposit Rate Live Line Chart
-          </p>
-          <p className="max-w-3xl text-gray-500 font-normal text-center pt-4 sm:pt-4 md:pt-5 text-lg sm:text-lg md:text-xl">
-            It is a dynamic graphical representation that visually displays the
-            fluctuation of fixed deposit interest rates over time. This chart
-            provides real-time updates, allowing users to monitor the changing
-            interest rates offered by various banks and financial institutions
-            for fixed deposit accounts.
-          </p>
-        </div>
-        <Chartfixdeposits data={datachart} />
-
-        {/* data of the table term */}
       </div>
     </div>
   );

@@ -4,9 +4,6 @@ import React from "react";
 import CompareSavingAccForm from "./CompareSaveAccForm";
 import DisplayContent from "./DisplayContent";
 import TableOfContent from "./TableOfContent";
-import Chart from "./Chart";
-import ChartComponent from "./ChartBar";
-import ChartFilter from "./ChartFilter";
 import FeatureOfferBank from "./FeatureOfferBank";
 import { useRecoilValue } from "recoil";
 import { savingChartDataAtom,isFilteredBankDataState,filteredSavingChartDataAtom} from "./atom";
@@ -34,21 +31,10 @@ const CompareSavingAcc = () => {
           </p>
         </div>
 
-        {/* fuction compare saving accounts */}
         <CompareSavingAccForm />
-        {/* test display banks selected */}
 
         <DisplayContent />
-        {/* fetch banks data */}
         <FeatureOfferBank />
-        <Chart />
-        <ChartComponent
-          chartData={
-            !isFilteredBankData ? savingChartData : filteredSavingChartData
-          }
-          isFilteredBankData={isFilteredBankData}
-        />
-        {/* <ChartFilter /> */}
         <TableOfContent />
       </div>
       <Faq />

@@ -138,18 +138,6 @@ const FeatureOfferBank = () => {
                         <div className="flex flex-row justify-between">
                           <div className="flex flex-col gap-[4px]">
                             <h1 className="companyName">{bank.bank}</h1>
-                            {/* <p className="text-[#667085] text-sm">
-                              {bank.condition}
-                            </p> */}
-                            {/* <div className="flex flex-row items-center gap-[11px]">
-                              <p className="flex items-center text-[#344054] text-base font-medium">
-                                {bank.rate}
-                              </p>
-                              <ImageDisplay
-                                className="flex items-center justify-center"
-                                count={bank.rate}
-                              />
-                            </div> */}
                           </div>
                         </div>
                       </td>
